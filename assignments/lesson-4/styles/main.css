@@ -1,0 +1,70 @@
+/* CIT 230 - Assignment Portal CSS Template */
+/* You may use #HEX or color names */
+
+/* * is a wildcard referring to all elements. */
+*{
+    font-family: 'Roboto', sans-serif;
+}
+h1 {
+    color:white;   
+}
+footer {
+    text-align: center;
+    color:blue;
+    font-size: 15px;
+    background-color:blue; 
+
+}
+
+nav {
+    font-size:1.7em ;
+    color:white;
+    background-color:blue;   
+    border-color:gray;
+    border-style: solid;
+    border-width: 7px;
+}
+nav ul {
+    list-style: none;
+}
+nav ul li:hover
+{
+    background-color: lightblue;
+    
+}
+
+* { margin: 0; box-sizing: border-box; } 
+
+body { 
+    font-size: 16px; 
+    line-height: 32px;
+    color:white ;
+}
+
+header, main, footer {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 100%;
+}
+
+header, footer, footer a {
+    text-align: center;
+    background-color: blue;
+    color: whitesmoke;
+}
+
+header img {
+    width: 85px;
+    height: auto;
+    float: right;
+}
+
+main img {
+    max-width:100%;
+}
+
+.weathersummary{
+    color:white;
+    background-color:blue;
+}
+

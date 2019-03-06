@@ -1,0 +1,43 @@
+/* CIT 230 - Assignment Portal CSS Template */
+/* You may use #HEX or color names */
+
+/* * is a wildcard referring to all elements. */
+* { margin: 0; box-sizing: border-box; } 
+
+body { 
+    border
+    font-size: 16px; 
+    line-height: 32px;
+    font-family:  Ubuntu, sans-serif ;
+    }
+
+thead {
+    background-color:#7fb9c2;
+}
+
+thead tr:nth-child(2){
+    background-color:#628ca6; 
+}
+
+tbody tr:nth-child(odd){
+    background-color:#e7f0ed;
+}
+
+tbody tr:nth-child(even){
+    background-color:#e7ffed;
+}
+
+tfoot tr{
+    background-color:#7fb9c2;
+}
+
+table tr, td, th {
+    border: 1px solid black; 
+}
+
+table {
+    box-shadow: 3px 3px 5px 6px #ccc;;
+    border-collapse: collapse;
+    
+}
+
