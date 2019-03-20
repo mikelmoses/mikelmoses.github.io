@@ -9,6 +9,7 @@ body {
     line-height: 32px;
     font-family:  Ubuntu, sans-serif ;
     color:  green ;
+    background-color: #bbb;
 }
 
 h1 {
@@ -20,12 +21,13 @@ h2 {
     font-size: 2rem;
     text-align: center;
     border-bottom: 1px solid #bbb;
+    padding: 50pt;
 }
 
 header, main, footer {
     margin: 1.25rem auto;
     padding: .5rem;
-    max-width: 100%;
+    max-width: 70%;
 }
 
 header, footer, footer a {
@@ -38,8 +40,14 @@ header img {
     width: 85px;
     height: auto;
     float: right;
+    padding: 50pt;
 }
 
 footer {
     font-size: 15px;
+}
+
+header ul{
+    list-style: none;
+    padding: 50pt;
 }

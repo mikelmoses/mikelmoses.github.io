@@ -1,0 +1,41 @@
+@media screen and (min-width: 750px)
+{
+    
+    #fiveDay
+    {
+        display:contents;
+        text-align: center;  
+        
+    }
+    table {
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    iframe {
+        padding-left: 20%;
+    }
+
+    #weathersummary{
+        max-width:25%;
+        bottom: 250px;
+    }
+    nav{
+        display: inherit;
+    }
+    nav ul{
+        list-style-type:none;
+        display: inherit;
+        display: inline;
+    }
+    nav h2{
+        display: none;
+    }
+
+    li{
+        display: inline;
+        padding-left: 5%;
+    }
+    
+}
