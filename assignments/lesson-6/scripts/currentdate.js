@@ -1,11 +1,4 @@
-<p>Click the button to display todays day of the week.</p>
 
-<button onclick="myFunction()">Try it</button>
-
-<p id="demo"></p>
-
-<script>
-function myFunction() {
   var d = new Date();
   var weekday = new Array(7);
   weekday[0] = "Sunday";
@@ -16,7 +9,26 @@ function myFunction() {
   weekday[5] = "Friday";
   weekday[6] = "Saturday";
 
+  var month = new Array(11);
+  month[0] = "January";
+  month[1] = "February";
+  month[2] = "March";
+  month[3] = "April";
+  month[4] = "May";
+  month[5] = "June";
+  month[6] = "July";
+  month[7] = "August";
+  month[8] = "September";
+  month[9] = "October";
+  month[10] = "November";
+  month[11] = "December";
+
   var n = weekday[d.getDay()];
-  document.getElementById("demo").innerHTML = n;
-}
-</script>
+  console.log(n);
+  var dt = d.getDate();
+  console.log(dt);
+  var m = month[d.getMonth()];
+  console.log(m);
+  var y = d.getFullYear();
+  console.log(y);
+  document.getElementById("date").innerHTML = n+", "+dt+"  "+m+"  "+y;

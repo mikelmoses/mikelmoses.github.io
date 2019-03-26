@@ -1,0 +1,52 @@
+@media screen and (min-width: 1020px)
+{
+    
+    #fiveDay
+    {
+        display:contents;
+        text-align: center;  
+        
+    }
+    table {
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    iframe {
+        padding-left: 20%;
+    }
+
+    #weathersummary{
+        max-width:25%;
+        bottom: 100px;
+    }
+    nav{
+        display: inline;
+    }
+    nav ul{
+        list-style-type:none;
+        display: inherit;
+        display: inline;
+    }
+    nav h2{
+        display: none;
+    }
+
+    li{
+        display: inline;
+        padding-left: 5%;
+    }
+    
+    main img {
+        max-width:100%;
+    }
+
+    .container {
+        margin: 1rem auto; 
+        display:grid; 
+        grid-template-columns: 1fr 1fr 1fr !important; 
+        max-width: 1048px;
+    }
+    
+}
