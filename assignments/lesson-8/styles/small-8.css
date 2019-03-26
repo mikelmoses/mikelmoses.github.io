@@ -150,23 +150,34 @@ nav {
         margin-left: -30px;
     }
    
-.container {
+    .container img {
         margin: 1rem auto;
-        display:grid; 
-        /* focus on this code right here only for the grid in the gallery */
+        display:grid;
         grid-template-columns: 1fr; 
-        /* stop here */
         max-width: 1048px;
+        width: 250px;
+        height: auto;
+        margin: .5rem;
     }
-img { 
+
+nav img { 
     width: 250px; 
     height: auto; 
     margin: .5rem;
 }
 
-figcaption {font-size: smaller;}
-/* hover effect */
-.norm:hover {box-shadow: 0 0 50px #333;}
+figcaption {
+    font-size: smaller;
+}
+
+.norm:hover {
+    box-shadow: 0 0 50px #333;
+}
+
+.container {
+    background-color: rgb(80, 78, 78);
+
+}
 
 /* Media Query for medium + screens */
 @media only screen and (min-width: 45em) {

@@ -134,7 +134,8 @@ nav {
     }
   .navigation a {	
       display: block;	
-      color: white; padding: .75rem;	
+      color: white; 
+      padding: .75rem;	
       text-align: center;	
       text-decoration: none;
     }
@@ -150,20 +151,26 @@ nav {
         margin-left: -30px;
     }
    
-.container {
+.container img {
         margin: 1rem auto;
         display:grid;
         grid-template-columns: 1fr; 
         max-width: 1048px;
+        width: 250px;
+        height: auto;
+        margin: .5rem;
     }
-img { 
-    width: 250px; 
-    height: auto; 
+
+nav img {
+    width: 250px;
+    height: auto;
     margin: .5rem;
 }
 
 figcaption {
-    font-size: smaller;}
+    font-size: smaller;
+}
+
 .norm:hover {
     box-shadow: 0 0 50px #333;
 }

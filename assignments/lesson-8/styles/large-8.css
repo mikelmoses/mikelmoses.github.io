@@ -1,4 +1,4 @@
-@media screen and (min-width: 750px)
+@media screen and (min-width: 1020px)
 {
     
     #fiveDay
@@ -42,6 +42,11 @@
         max-width:100%;
     }
 
-    .container {margin: 1rem auto; display:grid; grid-template-columns: 1fr 1fr 1fr; max-width: 1048px;}
+    .container {
+        margin: 1rem auto; 
+        display:grid; 
+        grid-template-columns: 1fr 1fr 1fr !important; 
+        max-width: 1048px;
+    }
     
 }

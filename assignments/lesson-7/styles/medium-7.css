@@ -10,7 +10,8 @@
         display: none;	
       }
       .navigation li { 
-          display: inline-block; margin-right: 1rem;
+          display: inline-block; 
+          margin-right: 1rem;
       }	
       .navigation li a { 
           color: yellow;
