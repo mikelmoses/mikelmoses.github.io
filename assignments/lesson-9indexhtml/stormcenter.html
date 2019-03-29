@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/small-9.css">
+    <link rel="stylesheet" href="styles/large-9.css">
+    <link rel="stylesheet" href="styles/medium-9.css">
+   
+    <title>idahoweather</title>
+</head>
+<body>
+        <header>
+                <img src="images/sun.jpg" alt="the sun">
+                <section id='about'>        
+                <h1>Idaho Weather Report</h1>
+                <div class="motto">Showing the weather report for the state Idaho!</div>
+                </section>
+         </header>
+        
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="#" title="About">Preston</a></li>
+                <li><a href="#" title="Service">Soda Spring</a></li>
+                <li><a href="#" title="History">Fish Haven</a></li>
+                <li><a href="stormcenter.html" title="Contact">Storm Center</a></li>
+                <li><a href="gallery-9.html" title="History">Gallery</a></li>
+            </ul>
+        </nav>
+<div class="container">
+    <fieldset>
+        <label for="textinput">FULL NAME</label>
+        <input type="text" name="alpha characters" required pattern="[A-z]">
+    </fieldset>
+    <fieldset>
+        <label for="email">eMail:</label>
+        <input type="email" name="email" placeholder="user@email.org"><br>
+    </fieldset>
+    <fieldset>
+            <label for="p">Phone:</label>
+            <input type="tel" name="phone" placeholder="###-###-####"><br>
+    </fieldset>
+    <fieldset>
+            <label for="num">Zip Code:</label>
+            <input type="number" id="num" name="num" pattern="(\d{5}([\-]\d{4})?)" autocomplete="shipping postal-codep"><br>
+    </fieldset>
+    <fieldset>
+            <label for="theDate">STORM Date :</label>
+            <input type="date" name="theDate"><br>
+    </fieldset>
+    <fieldset>
+            <label for="Storm">Storm Type: </label>
+            <input name="list" list="stormlist">
+        <datalist id="stormlist">
+            <option value="Flash Flood">
+            <option value="Hail">
+            <option value="Hurricane">
+            <option value="Thunderstorm">
+            <option value="Tornado">
+        </datalist>
+    </fieldset> 
+    <fieldset>
+        <label for="range">storm severity (1 to 10):</label>
+        <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+        <span id="ratingvalue">5</span><br>
+    </fieldset>
+    <fieldset>
+            <label for="Storm">Storm Region: </label>
+            <input name="list" list="stormregion">
+        <datalist id="Select Region">
+            <option value="Preston">
+            <option value="Soda Springs">
+            <option value="Fish Haven.">
+            <option value="Thunderstorm">
+            <option value="Tornado">
+        </datalist>
+    </fieldset>
+    <fieldset>
+        <legend>user in-danger level <em>(Choose one)</em></legend>
+        <div>
+            <input type="radio" id="level1" name="danger" value="yes" checked>
+            <label for="level1">yes</label>
+        </div>
+        <div>
+            <input type="radio" id="level2" name="danger" value="maybe">
+            <label for="level2">maybe</label>
+        </div>
+        <div>
+            <input type="radio" id="level3" name="danger" value="no">
+            <label for="level3">no</label>
+        </div>
+    </fieldset>
+    <fieldset>
+            <label for="textinput">additional information or comments</label>
+            <input type="textarea" name="alpha characters" required pattern="[a-z]">
+            <br>
+            <textarea rows="4" cols="50" name="comment" form="usrform">
+                Enter text here...</textarea>
+    </fieldset>
+    <fieldset>
+        <label for="form">form submission button</label>
+        <input type="form" name="form"><br>
+        <input type="submit">
+    </fieldset>
+</div>
