@@ -8,29 +8,37 @@
     <link rel="stylesheet" href="styles/large-10.css">
     <link rel="stylesheet" href="styles/medium-10.css">
    
-    <title>idahoweather</title>
+    <title>Temple</title>
 </head>
 <body>
-        <header>
-                <img src="images/sun.jpg" alt="the sun">
-                <section id='about'>        
-                <h1>Idaho Weather Report</h1>
-                <div class="motto">Showing the weather report for the state Idaho!</div>
-                </section>
-         </header>
-        
-        <nav>
-            <ul class="navigation">
-                <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
-                
-                <li><a href="homepage.html" title="Home">Home</a></li>
-                <li><a href="#" title="About">Preston</a></li>
-                <li><a href="#" title="Service">Soda Spring</a></li>
-                <li><a href="#" title="History">Fish Haven</a></li>
-                <li><a href="stormcenter.html" title="Contact">Storm Center</a></li>
-                <li><a href="gallery-10.html" title="History">Gallery</a></li>
-            </ul>
-        </nav>
+    <header>
+        <img src="images/moroni.jpg" alt="moroni">
+        <section id='about'>        
+        <h1>Temple-House of the lord</h1>
+        <div class="motto">Temple worthiness and feel the sprit through visitin it!</div>
+        </section>
+    
+<nav>
+	<ul class="navigation">
+		<li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a href="homepage.html" title="Home">Temple</a></li>
+        <li><a href="Reservation.html" title="Service">Reservation</a></li>
+        <li><a href="mainhome.html" title="Contact">Homepage</a></li>
+        <li><a href="sodaspring.html" title="Service">Service</a></li>
+        <div class="dropdown">
+            <button class="dropbtn">Services  
+            </button>
+            <div class="dropdown-content">
+              <a href="Reception.html">Reception</a>
+              <a href="Missionary.html">Full-Time Temple Missionary</a>
+
+            </div>
+          </div>
+		<li><a href="Contact.html" title="Contact">Contact Page</a></li>
+        <input type="text" placeholder="Search..">
+	</ul>
+</nav>
+</header>
 <div class="container">
     <fieldset>
         <label for="textinput">FULL NAME</label>
@@ -49,11 +57,11 @@
             <input type="number" id="num" name="num" pattern="(\d{5}([\-]\d{4})?)" autocomplete="shipping postal-codep"><br>
     </fieldset>
     <fieldset>
-            <label for="theDate">STORM Date :</label>
+            <label for="theDate"> Date :</label>
             <input type="date" name="theDate"><br>
     </fieldset>
     <fieldset>
-            <label for="Storm">Storm Type: </label>
+            <label for="Storm">Type of rooms: </label>
             <input name="list" list="stormlist">
         <datalist id="stormlist">
             <option value="Flash Flood">
@@ -69,33 +77,33 @@
         <span id="ratingvalue">5</span><br>
     </fieldset>
     <fieldset>
-            <label for="Storm">Storm Region: </label>
+            <label for="Storm">Home State Or Country: </label>
             <input name="list" list="stormregion">
         <datalist id="Select Region">
-            <option value="Preston">
-            <option value="Soda Springs">
-            <option value="Fish Haven.">
-            <option value="Thunderstorm">
-            <option value="Tornado">
+            <option value="South & North America">
+            <option value="Asia">
+            <option value="Middle Eastern.">
+            <option value="Samoan">
+            <option value="European">
         </datalist>
     </fieldset>
     <fieldset>
-        <legend>user in-danger level <em>(Choose one)</em></legend>
+        <legend>Number of Rooms<em>(Choose one)</em></legend>
         <div>
             <input type="radio" id="level1" name="danger" value="yes" checked>
-            <label for="level1">yes</label>
+            <label for="level1">1</label>
         </div>
         <div>
             <input type="radio" id="level2" name="danger" value="maybe">
-            <label for="level2">maybe</label>
+            <label for="level2">2</label>
         </div>
         <div>
             <input type="radio" id="level3" name="danger" value="no">
-            <label for="level3">no</label>
+            <label for="level3">3</label>
         </div>
     </fieldset>
     <fieldset>
-            <label for="textinput">additional information or comments</label>
+            <label for="textinput">Special Accommodations/Comments</label>
             <input type="textarea" name="alpha characters" required pattern="[a-z]">
             <br>
             <textarea rows="4" cols="50" name="comment" form="usrform">
@@ -107,3 +115,20 @@
         <input type="submit">
     </fieldset>
 </div>
+<footer>
+        <article class="address">
+            <h2>Headquarter Address</h2>
+                <p>&#127974;   4800 Montgomery Ln #300,</p>
+                    <p> Bethesda, MD 20814 USA</p>
+                <p>&#9742;   208-418-2585</p>
+                <p>&#9993;   nak16002@byui.edu</p>       
+        </article>
+    <p> <span id="date" >2019-2020</span>  We are blessed <a href="http://idahoweather.com/ "> Where there is freedom of worship </a></p>
+    <p>&copy; Copyright 2019, Temple-lds. All rights reserved.</p>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/homepage.js"></script>
+    <script src="scripts/mainhome.js"></script>
+</body>
+</html>
