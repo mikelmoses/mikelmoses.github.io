@@ -7,12 +7,12 @@ her: "18 April 2006 - Announced, 14 November 2007 - Groundbreaking, 13 June 2010
 jaan: "M, W, F - 11am-9pm", 
 heer: "Saturday, 13 April 2019 . Monday, 15 July 2019 - Monday, 29 July 2019. Saturday, 12 October 2019. Tuesday, 24 December 2019. Wednesday, 25 December 2019. Tuesday, 31 December 2019" };
 x = myObj.name;
-y = myObj.age;
-z = myObj.city;
-a = myObj.ser;
-b = myObj.her;
-c = myObj.jaan;
-d = myObj.heer;
+var y = myObj.age;
+var z = myObj.city;
+var a = myObj.ser;
+var b = myObj.her;
+var c = myObj.jaan;
+var d = myObj.heer;
 document.getElementById("demo").innerHTML = x;
 document.getElementById("dem").innerHTML = y;
 document.getElementById("med").innerHTML = z;
@@ -21,7 +21,7 @@ document.getElementById("noor").innerHTML = b;
 document.getElementById("nana").innerHTML = c;
 document.getElementById("par").innerHTML = d;
 
-
+// get weather for cebu city
 var request = new XMLHttpRequest();
 request.open('GET', 'https://api.openweathermap.org/data/2.5/weather?id=1717512&appid=3da6c32fc144856c7600d0fa1baf603d&units=imperial', true);
 request.send();
@@ -63,15 +63,15 @@ document.getElementById("spl").innerHTML = bf;
 document.getElementById("hye").innerHTML = cv;
 document.getElementById("uri").innerHTML = dg;
 
-
-var request = new XMLHttpRequest();
-request.open('GET', 'https://api.openweathermap.org/data/2.5/weather?id=4896861&appid=3da6c32fc144856c7600d0fa1baf603d&units=imperial', true);
-request.send();
+// nauvoo
+var reque = new XMLHttpRequest();
+reque.open('GET', 'https://api.openweathermap.org/data/2.5/weather?id=4896861&appid=3da6c32fc144856c7600d0fa1baf603d&units=imperial', true);
+reque.send();
 
 
 request.onload = function() {
-   
-    var weather = JSON.parse(request.responseText);
+   console.log(reque.responseText);
+    var weather = JSON.parse(reque.responseText);
     console.log(weather);
     
     document.getElementById('veer').innerHTML = weather.main.humidity; 
@@ -106,14 +106,14 @@ document.getElementById("jun").innerHTML = cvq;
 document.getElementById("jul").innerHTML = dgq;
 
 
-var request = new XMLHttpRequest();
-request.open('GET', 'https://api.openweathermap.org/data/2.5/weather?id=5780026&appid=3da6c32fc144856c7600d0fa1baf603d&units=imperial', true);
-request.send();
+var requ = new XMLHttpRequest();
+requ.open('GET', 'https://api.openweathermap.org/data/2.5/weather?id=5780026&appid=3da6c32fc144856c7600d0fa1baf603d&units=imperial', true);
+requ.send();
 
 
-request.onload = function() {
+requ.onload = function() {
    
-    var weather = JSON.parse(request.responseText);
+    var weather = JSON.parse(requ.responseText);
     console.log(weather);
     
     document.getElementById('ten').innerHTML = weather.main.humidity; 
@@ -148,7 +148,7 @@ document.getElementById("che").innerHTML = cvq;
 document.getElementById("saat").innerHTML = dgq;
 
 
-var request = new XMLHttpRequest();
+request = new XMLHttpRequest();
 request.open('GET', 'https://api.openweathermap.org/data/2.5/weather?id=2130404&appid=3da6c32fc144856c7600d0fa1baf603d&units=imperial', true);
 request.send();
 
