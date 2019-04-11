@@ -1,3 +1,84 @@
+var request = new XMLHttpRequest();
+request.open('GET', 'json/temples.json', true);
+request.responseType = 'json';
+request.send();
+
+
+request.onload = function() {
+   
+    var temples = request.response;
+    console.log(temples);
+    e = temples[0].name;
+    y = temples[0].age;
+    z = temples[0].car;
+    a = temples[0].rac;
+    b = temples[0].raco;
+    c = temples[0].dog;
+    d = temples[0].god;
+    document.getElementById("address").innerHTML = e;
+    document.getElementById("dem").innerHTML = y;
+    document.getElementById("de").innerHTML = z;
+    document.getElementById("dev").innerHTML = a;
+    document.getElementById("devi").innerHTML = b;
+    document.getElementById("deil").innerHTML = c;
+    document.getElementById("deve").innerHTML = d;
+    
+
+    var temples = request.response;
+    console.log(temples);
+    e = temples[1].name;
+    y = temples[1].age;
+    z = temples[1].car;
+    a = temples[1].rac;
+    b = temples[1].raco;
+    c = temples[1].dog;
+    d = temples[1].god;
+    document.getElementById("add").innerHTML = e;
+    document.getElementById("med").innerHTML = y;
+    document.getElementById("ed").innerHTML = z;
+    document.getElementById("ved").innerHTML = a;
+    document.getElementById("ived").innerHTML = b;
+    document.getElementById("lived").innerHTML = c;
+    document.getElementById("eved").innerHTML = d;
+
+    var temples = request.response;
+    console.log(temples);
+    e = temples[2].name;
+    y = temples[2].age;
+    z = temples[2].car;
+    a = temples[2].rac;
+    b = temples[2].raco;
+    c = temples[2].dog;
+    d = temples[2].god;
+    document.getElementById("addy").innerHTML = e;
+    document.getElementById("mede").innerHTML = y;
+    document.getElementById("edu").innerHTML = z;
+    document.getElementById("veda").innerHTML = a;
+    document.getElementById("ivedy").innerHTML = b;
+    document.getElementById("livede").innerHTML = c;
+    document.getElementById("evedo").innerHTML = d;
+
+    var temples = request.response;
+    console.log(temples);
+    e = temples[3].name;
+    y = temples[3].age;
+    z = temples[3].car;
+    a = temples[3].rac;
+    b = temples[3].raco;
+    c = temples[3].dog;
+    d = temples[3].god;
+    document.getElementById("andy").innerHTML = e;
+    document.getElementById("madde").innerHTML = y;
+    document.getElementById("enadu").innerHTML = z;
+    document.getElementById("vedas").innerHTML = a;
+    document.getElementById("slok").innerHTML = b;
+    document.getElementById("swim").innerHTML = c;
+    document.getElementById("enjuy").innerHTML = d;
+}
+
+
+
+/*
 var myObj, x;
 myObj = {"name":"The Church of Jesus Christ of Latter-day Saints Gorordo Avenue, Barangay Lahug, Cebu City, 6000 Cebu, Philippines",
  "age":"(63) 32-230-1207", 
@@ -6,20 +87,20 @@ myObj = {"name":"The Church of Jesus Christ of Latter-day Saints Gorordo Avenue,
  "raco":"18 April 2006. Announced-14 November 2007. Groundbreaking-13 June 2010. ", 
  "dog":"M,W,F-(9am-8pm)", 
  "god":"Saturday, 13 April 2019. Monday, 15 July 2019 - Monday, 29 July 2019. Saturday, 12 October 2019. Tuesday, 24 December 2019. Wednesday, 25 December 2019. Tuesday, 31 December 2019"};
-x = myObj.name;
-y = myObj.age;
-z = myObj.car;
-a = myObj.rac;
-b = myObj.raco;
-c = myObj.dog;
-d = myObj.god;
-document.getElementById("address").innerHTML = x;
+var e = myObj.name;
+var y = myObj.age;
+var z = myObj.car;
+var a = myObj.rac;
+var b = myObj.raco;
+var c = myObj.dog;
+var d = myObj.god;
+document.getElementById("demo").innerHTML = e;
 document.getElementById("dem").innerHTML = y;
-document.getElementById("de").innerHTML = z;
-document.getElementById("dev").innerHTML = a;
-document.getElementById("devi").innerHTML = b;
-document.getElementById("devil").innerHTML = c;
-document.getElementById("deve").innerHTML = d;
+document.getElementById("med").innerHTML = z;
+document.getElementById("door").innerHTML = a;
+document.getElementById("noor").innerHTML = b;
+document.getElementById("nana").innerHTML = c;
+document.getElementById("par").innerHTML = d;
 
 
 var request = new XMLHttpRequest();
@@ -48,20 +129,20 @@ myObj = {"name":"50 N Wells St Nauvoo IL 62354 United States",
  "raco":"4 April 1999 Announced, 24 October 1999, Groundbreaking, 27 June 2002 ", 
  "dog":"M,W,F-(9am-8pm)", 
  "god":"Saturday, 6 April 2019. Monday, 29 April 2019 - Sunday, 12 May 2019. Saturday, 5 October 2019. Monday, 11 November 2019 - Monday, 25 November 2019. Wednesday, 27 November 2019 - Thursday, 28 November 2019. Wednesday, 25 December 2019"};
-navo = myObj.name;
+test = myObj.name;
 yar = myObj.age;
 zer = myObj.car;
 amo = myObj.rac;
 bob = myObj.raco;
 cat = myObj.dog;
 ded = myObj.god;
-document.getElementById("add").innerHTML = navo;
-document.getElementById("med").innerHTML = yar;
-document.getElementById("ed").innerHTML = zer;
-document.getElementById("ved").innerHTML = amo;
-document.getElementById("ived").innerHTML = bob;
-document.getElementById("lived").innerHTML = cat;
-document.getElementById("eved").innerHTML = ded;
+document.getElementById("medo").innerHTML = test;
+document.getElementById("din").innerHTML = yar;
+document.getElementById("fo").innerHTML = zer;
+document.getElementById("hlo").innerHTML = amo;
+document.getElementById("spl").innerHTML = bob;
+document.getElementById("hye").innerHTML = cat;
+document.getElementById("uri").innerHTML = ded;
 
 
 var request = new XMLHttpRequest();
@@ -192,3 +273,5 @@ request.onload = function() {
 //     document.getElementById('gmotto').innerHTML = request.response.towns[2].motto;
 //     document.getElementById('smotto').innerHTML = request.response.towns[6].motto;
 // }
+
+*/

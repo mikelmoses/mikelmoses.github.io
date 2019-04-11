@@ -24,6 +24,7 @@
     
     main img {
         max-width:100%;
+        grid-template-columns: 1fr  !important;
     }
 
     .container {
@@ -34,7 +35,7 @@
     }
 
     .grid-container {
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr;
     }
 
     .dropdown-content {
@@ -56,5 +57,5 @@
       main{
           text-align: center;
       }
-    
+      
 }

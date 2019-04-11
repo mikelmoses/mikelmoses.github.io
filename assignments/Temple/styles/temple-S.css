@@ -45,6 +45,9 @@ header img {
 
 img {
     padding: none;
+    display: grid;
+    height: auto;
+    width: 515px;
 }
 .address {
     background-color: rgb(16, 16, 36);      
@@ -132,14 +135,16 @@ figcaption {
     padding: 20px;
     font-size: 20px;
     text-align: left;
+    height: auto;
   }
 
   .grid-container {
     display: grid;
     grid-column-gap: 50px;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
     background-color: rgb(4, 9, 10);
     padding: 10px;
+    height: auto;
   
   }
 
